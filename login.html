@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/vilvah2.png">
+    <title>Login vilvah store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="images/vilvah logo.png" width="100px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #92ba65;" aria-current="page" href="hair.html">Hair</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #92ba65;" href="face.html">Face</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: #92ba65;" href="body.html">Body</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #92ba65;" href="milkrange.html">Milk Range</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: #92ba65;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Combos & Gifting
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Face Care Combo</a></li>
+            <li><a class="dropdown-item" href="#">Hair Care Combo</a></li>
+            <li><a class="dropdown-item" href="#">Lip Care Combo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Milk Giftset - EveryDay care</a></li>
+            <li><a class="dropdown-item" href="#">BestSellers Gift</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #92ba65;" href="blog.html" aria-current="true">Blog</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sm-icons fs-5 ps-5 " role="search" >
+        <a class="nav-link" style="color: #92ba65;"><i class='bx bx-search'></i></a>
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" style="color: #92ba65;"><i class='bx bx-user'></i></a>
+        <a class="nav-link" style="color: #92ba65; width: 50px;"><i class='bx bx-shopping-bag' ></i></a>
+    </ul>
+    
+    </div>
+  </div>
+</nav>
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/banner2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner4.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--------products--------->
+<div class="container-fluid " >
+<div class="heading mt-3 mb-2" style="text-align: center; font-size: 30px; font-weight: 500;" > Best Sellars</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col-md-3 h-100">
+    <div class="card" style="width: 18rem;">
+      <img src="images/product-1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Milk Drops Serum</h5>
+        <p class="card-text">Brightens skin  hyperpigmentation.</p>
+        <a href="#" class="btn btn-success" style="background-color: #92ba65;">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/product-2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Aloevera Gel</h5>
+        <p class="card-text">Hydration boost for skin and Hair.</p>
+        <a href="#" class="btn btn-success" style="background-color: #92ba65;">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/product-3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Skin Brightening Combo</h5>
+        <p class="card-text">Get dewy brighter skin.</p>
+        <a href="#" class="btn btn-success" style="background-color: #92ba65;">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/product-4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lip Balm - Grapefruit</h5>
+        <p class="card-text">Soft lips with natural tint.</p>
+        <a href="#" class="btn btn-success" style="background-color: #92ba65;">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/product-5.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Milk Mud Mask</h5>
+        <p class="card-text">Removes tan and gives brighter skin.</p>
+        <a href="#"  class="btn btn-success" style="background-color: #92ba65;">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;"> 
+      <img src="images/product-6.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cream Conditioner</h5>
+        <p class="card-text">Nourishes hair and prevents breakage.</p>
+        <a href="#" class="btn btn-success" style="background-color: #92ba65;">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/product-7.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hair growth oil</h5>
+        <p class="card-text">Reduces Hairfall, Promotes Hairgrowth .</p>
+        <a href="#" class="btn btn-success" style="background-color: #92ba65;">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card h-100" style="width: 18rem;">
+      <img src="images/product-8.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Goatmilk Shampoo</h5> <br>
+        <p class="card-text">Repairs dry , frizzy hair.</p>
+        <a href="#" class="btn btn-success" style="background-color: #92ba65;">Add to cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!------------marquee text----------->
+<marquee class="fs-3 mt-3 "  width="100%" direction="left" behavior="scroll" scrollamount="15" style="color: #92ba65; ">
+<span ><i class="fa-solid fa-earth-asia"></i> Safe & Sustainable      </span>
+<span > <i class="fa-brands fa-react"></i> High Performance Formulation </span>
+<span><i class="fa-solid fa-sun"></i> For the real you </span>
+ <span><i class="fa-solid fa-droplet"></i> Binge on milk   </span>
+</marquee>
+
+
+<!-------------small banner----------------->
+<div class="rounded-10 m-5"><img src="images/small-banner.png" class="img-fluid" >
+</div>
+<!--------footer--------->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted " >
+ 
+ <section class="mt-5" style="background-color: #a4b660;">
+  <div class="container text-center text-md-start ">
+    <div class="row ">
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
+        <img src="images/white-logo.png" alt="">
+        <p>Sign up to get 10% off on your first order</p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+        <h6 class="text-uppercase fw-bold mb-4">Top Categories</h6>
+         <p>
+          <a href="#" class="text-reset">Milk Range</a>
+         </p>
+         <p><a href="#" class="text-reset">Combos</a></p>
+         <p><a href="#" class="text-reset">Hair Care</a></p>
+         <p><a href="#" class="text-reset">Body Care</a></p>
+         <p><a href="#" class="text-reset">Face Care</a></p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+        <h6 class="text-uppercase fw-bold mb-4">policies</h6>
+          <p>
+            <a href="#" class="text-reset">Privacy Policy</a>
+          </p>
+          <p><a href="#" class="text-reset">Terms & Conditions</a></p>
+          <p><a href="#" class="text-reset">Shipping & Cancellation</a></p>
+          <p><a href="#" class="text-reset">Returns & Refund</a></p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+          <h6 class="text-uppercase fw-bold mb-4">Info</h6>
+          <p><a href="#" class="text-reset">Our Story</a></p>
+          <p><a href="#" class="text-reset">Contact Us</a></p>
+          <p><a href="#" class="text-reset">Track Your Order</a></p>
+          <p><a href="#" class="text-reset">Blogs</a></p>
+    </div>
+    <div style="font-size: 25px;">
+      <a href="" class="me-4 text-reset" >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+  </div>
+  </div>
+ </section>
+</footer>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close d-flex justify-content-right" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-title text-center">
+            <a class="d-flex justify-content-center"><img src="images/vilvah logo.png" width="100px"></a>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email1"placeholder="Your email address..."> <br>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password1" placeholder="Your password..."> <br>
+              </div>
+              <button type="button" style="background-color: #92ba65;"  class="btn btn-block btn-round">Login</button>
+            </form>
+            
+            <div class="text-center text-muted delimiter">or use a social network</div>
+            <div class="d-flex justify-content-center social-buttons">
+              <button type="button" class="btn  btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button type="button" class="btn  btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </button>
+              <button type="button" class="btn  btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                <i class="fab fa-linkedin"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="signup-section">Not a member yet? <a href="#a"  style="color: #92ba65;"> Sign Up</a>.</div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
