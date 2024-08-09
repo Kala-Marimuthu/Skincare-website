@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
- <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="valid.js"></script>
+    <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
 
 </head>
@@ -234,47 +235,53 @@
 </footer>
 
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header border-bottom-0">
-          <button type="button" class="close d-flex justify-content-right" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-title text-center">
-            <a class="d-flex justify-content-center"><img src="images/vilvah logo.png" width="100px"></a>
-          </div>
-          <div class="d-flex flex-column text-center">
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-control" id="email1"placeholder="Your email address..."> <br>
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="password1" placeholder="Your password..."> <br>
-              </div>
-              <button type="button" style="background-color: #92ba65;"  class="btn btn-block btn-round">Login</button>
-            </form>
-            
-            <div class="text-center text-muted delimiter">or use a social network</div>
-            <div class="d-flex justify-content-center social-buttons">
-              <button type="button" class="btn  btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
-                <i class="fab fa-twitter"></i>
-              </button>
-              <button type="button" class="btn  btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
-                <i class="fab fa-facebook"></i>
-              </button>
-              <button type="button" class="btn  btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
-                <i class="fab fa-linkedin"></i>
+          <div class="modal-header border-bottom-0">
+              <button type="button" class="close d-flex justify-content-right" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
               </button>
           </div>
-        </div>
+          <div class="modal-body">
+              <div class="form-title text-center">
+                  <a class="d-flex justify-content-center"><img src="images/vilvah logo.png" width="100px"></a>
+              </div>
+              <div class="d-flex flex-column text-center">
+                  <form id="loginForm" onsubmit="return validateForm()">
+                      <div class="form-group">
+                          <input type="email" class="form-control" id="email1" placeholder="Your email address..."> <br>
+                          <div id="email_error" style="color:red; display:none;">Please fill up your Email</div>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" class="form-control" id="password1" placeholder="Your password..."> <br>
+                          <div id="pass_error" style="color:red; display:none;">Please fill up your Password</div>
+                      </div>
+                      <button type="submit" style="background-color: #92ba65;" class="btn btn-block btn-round">Login</button>
+                  </form>
+
+                  <div class="text-center text-muted delimiter">or use a social network</div>
+                  <div class="d-flex justify-content-center social-buttons">
+                      <button type="button" class="btn btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                          <i class="fab fa-twitter"></i>
+                      </button>
+                      <button type="button" class="btn btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                          <i class="fab fa-facebook"></i>
+                      </button>
+                      <button type="button" class="btn btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                          <i class="fab fa-linkedin"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+              <div class="signup-section">Not a member yet? <a href="#a" style="color: #92ba65;"> Sign Up</a>.</div>
+          </div>
       </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <div class="signup-section">Not a member yet? <a href="#a"  style="color: #92ba65;"> Sign Up</a>.</div>
-        </div>
-    </div>
   </div>
+</div>
+
+   
+  
 
 
 
